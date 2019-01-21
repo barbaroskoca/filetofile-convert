@@ -8,12 +8,12 @@ namespace FileToFile.Models
 {
     public class AddressModel
     {
-        public List<Address> Addresses {get; set;}
-
         public AddressModel()
         {
             Addresses = new List<Models.Address>();
         }
+
+        public List<Address> Addresses {get; set;}       
     }
 
     public class Address

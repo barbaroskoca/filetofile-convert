@@ -7,6 +7,14 @@ using System.Xml.Serialization;
 
 namespace FileToFile.Models
 {
+    [XmlRoot(ElementName = "AddressInfo")]
+    public class XMLModel
+    {
+        [XmlElement(ElementName = "City")]
+        public List<XMLElement> XMLElements { get; set; }
+
+    }
+
     [XmlRoot(ElementName = "Zip")]
     public class Zip
     {
@@ -37,11 +45,5 @@ namespace FileToFile.Models
 
     }
 
-    [XmlRoot(ElementName = "AddressInfo")]
-    public class XMLModel
-    {
-        [XmlElement(ElementName = "City")]
-        public List<XMLElement> XMLElements { get; set; }
-
-    }
+   
 }

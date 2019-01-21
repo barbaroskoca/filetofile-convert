@@ -9,7 +9,9 @@ namespace FileToFile.Tests
         [TestMethod()]
         public void TestCase1()
         {
-            var FileToFileconvert = FileToFileConvert.Instance; ;
+            //csv to xml test case
+
+            var FileToFileconvert = FileToFileConvert.Instance;
 
             int expectedCountOfZipCodessForAntalya = 83;
 
@@ -64,7 +66,9 @@ namespace FileToFile.Tests
         [TestMethod()]
         public void TestCase2()
         {
-            var FileToFileconvert = FileToFileConvert.Instance; ;
+            //csv to csv test case
+
+            var FileToFileconvert = FileToFileConvert.Instance;
 
             int expectedCountOfZipCodessForAntalya = 3234;
 
@@ -114,7 +118,9 @@ namespace FileToFile.Tests
         [TestMethod()]
         public void TestCase3()
         {
-            var FileToFileconvert = FileToFileConvert.Instance; ;
+            //xml to csv test case
+
+            var FileToFileconvert = FileToFileConvert.Instance;
 
             int expectedCountOfZipCodessForAntalya = 122;
 

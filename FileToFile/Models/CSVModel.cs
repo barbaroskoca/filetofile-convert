@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace FileToFile.Models
 {
-   
+    public class CSVModel
+    {
+        public CSVModel()
+        {
+            CSVLines = new List<CSVLine>();
+        }
+
+        public List<CSVLine> CSVLines { get; set; }
+    }
+
+
     public class CSVLine
     {
         public string CityName { get; set; }
@@ -18,16 +28,7 @@ namespace FileToFile.Models
         public string ZipCode { get; set; }
     }
 
-    public class CSVModel
-    {
-        public List<CSVLine> CSVLines { get; set; }
 
-        public CSVModel()
-        {
-            CSVLines = new List<CSVLine>();
-        }
-
-    }
 
 
 }
